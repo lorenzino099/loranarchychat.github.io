@@ -114,6 +114,25 @@ body {
 	width: 50px;
 }
 
+.chatalt2 {
+ backdrop-filter: blur(9px);
+ height: calc(100% - 50px);
+ position: absolute;
+ top: 50px;
+ :;-
+ color: transparent rgba(255, 255, 255, 0.05);
+ scrollbar-width: none;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.minnit {
+ height: 100%;
+ backdrop-filter: blur(3px);
+}
+
 /* @font-face {
   font-family: "Exo 2";
   src: url('/static/Exo2-Regular.ttf') format('truetype');
