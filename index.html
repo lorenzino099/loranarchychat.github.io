@@ -12,14 +12,14 @@
     <link rel="stylesheet" type="text/css" href="css/fontawesome.css">
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
 
+	<!-- custom chat right -->
+    <script src="js/chat3/script.js"></script>
+    <link type="text/css" href="css/chat3.css" rel="stylesheet">
+    <!--             -->
+	
     <!-- custom chat -->
     <script src="js/chat2/script.js"></script>
     <link type="text/css" href="css/chat2.css" rel="stylesheet">
-    <!--             -->
-
-    <!-- custom chat right -->
-    <script src="js/chat3/script.js"></script>
-    <link type="text/css" href="css/chat3.css" rel="stylesheet">
     <!--             -->
 
     <!-- start of draw2 -->
@@ -34,7 +34,7 @@
     <!-- Script ---------------->
     <script src="js/iochat-hack.js"></script>
     <!-- End ------------------->
-
+	  
     <script src="js/jquery.js"></script>
     <script src="js/cookie.js"></script>
     <script src="js/client.js"></script>
@@ -55,6 +55,34 @@
   <!-- Desktop Information + Alternative Chat -->
   <body>
     <div class="main">
+		<!-- <div id="chat3">
+			<form id="message3">
+			    <input type="text" id="msg3" placeholder="Message" size="58" autofocus="">
+			    <input type="submit" id="send3" value="Send">
+			</form>
+			<div id="log3"></div>
+			<form id="name3" onsubmit="return false;">
+			    <input type="text" id="nme3" placeholder="Name" size="58" autofocus="">
+			    <div id="colorpicker3" style="color: rgb(53, 84, 192); background-color: rgb(94, 248, 135);"></div>
+			</form>
+		</div> -->
+		<!-- chat on the right -->
+		<footer class="chatalt2" style="scrollbar-color: transparent rgba(255, 255, 255, 0);scrollbar-width: none;right: 0px;position: absolute;top: 50px;">
+		<div class="item minnit" style="scrollbar-color: transparent rgba(255, 255, 255, 0); scrollbar-width: none;">
+			<div id="chat3" style="flex-direction: column-reverse; width: 400px; display: flex;">
+				<form id="message3">
+				<input type="text" id="msg3" placeholder="Message" size="58" autofocus="">
+				<input type="submit" id="send3" value="Send" style="background-color: transparent; color: white;">
+				</form>
+				<div id="log3"></div>
+				<form id="name3">
+				<input type="text" id="nme3" placeholder="Name" size="58" autofocus="">
+				<div id="colorpicker3" style="color: rgb(53, 84, 192); background-color: rgb(53, 84, 192);"></div>
+				</form>
+			</div>
+		</div>
+		</footer>
+		<!-- end -->
       <footer class="chatalt" style="scrollbar-color: transparent rgba(255, 255, 255, 0); scrollbar-width: none;">
         <div class="item minnit" style="scrollbar-color: transparent rgba(255, 255, 255, 0); scrollbar-width: none;">
 		  <div id="chat2">
@@ -173,24 +201,6 @@
     </div>
   </div> -->
   <!-- End -->
-
-<!-- chat on the right -->
-<footer class="chatalt2" style="scrollbar-color: transparent rgba(255, 255, 255, 0);scrollbar-width: none;right: 0px;position: absolute;top: 50px;">
-	<div class="" style="scrollbar-color: transparent rgba(255, 255, 255, 0); scrollbar-width: none;">
-		<div id="chat3">
-		    <form id="message3">
-			<input type="text" id="msg3" placeholder="Message" size="58" autofocus="">
-			<input type="submit" id="send3" value="Send" style="background-color: transparent; color: white;">
-		    </form>
-		    <div id="log3"></div>
-		    <form id="name3">
-			<input type="text" id="nme3" placeholder="Name" size="58" autofocus="">
-			<div id="colorpicker3" style="color: rgb(53, 84, 192); background-color: rgb(53, 84, 192);"></div>
-		    </form>
-		</div>
-	</div>
-</footer>
-<!-- end -->
 
   <!-- Sidebars -->
   <aside id="sidebars">
