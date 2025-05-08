@@ -13,6 +13,14 @@
   flex-direction: column-reverse;
 }
 
+#chat3 {
+  position: absolute;
+  right: 0px;
+  width: 400px;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
 #messages {
  scrollbar-color: transparent rgba(255, 255, 255, 0.05);
  scrollbar-width: none;
@@ -37,8 +45,23 @@
  height: calc(100% - 50px);
  position: absolute;
  top: 50px;
- scrollbar-color: transparent rgba(255, 255, 255, 0.05);
+ :;-
+ color: transparent rgba(255, 255, 255, 0.05);
  scrollbar-width: none;
+}
+.chatalt2 {
+ backdrop-filter: blur(9px);
+ height: calc(100% - 50px);
+ position: absolute;
+ top: 50px;
+ :;-
+ color: transparent rgba(255, 255, 255, 0.05);
+ scrollbar-width: none;
+ right: 0px;
+  /* or absolute/relative as needed */
+ width: 400px;
+  /* semi-transparent */
+ z-index: 100;
 }
 .container {
   display: flex;
@@ -200,7 +223,7 @@
 .colorPickerClass {
  position: absolute;
  left: 325px;
- z-index: 1000;
+ z-index: 10;
  padding: 5px;
  border: 1px solid rgba(255,255,255,0.15);
  border-radius: 5px;

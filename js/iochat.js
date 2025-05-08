@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
 
   const toggleButtonChat = document.getElementById('toggleButtonChat');
-  const chat = document.getElementById('chat');
+  const chat = document.getElementById('thirdChatServer');
   console.log("sidebar");
   const toggleButtonSidebar = document.getElementById('toggleButtonSidebar');
   const sidebars = document.getElementById('sidebars');

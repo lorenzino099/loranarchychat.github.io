@@ -1,10 +1,10 @@
 (function() {
   window.addEventListener('load', function() {
-    var msg = document.getElementById("msg2"); // Message input field
-    var nme = document.getElementById("nme2"); // Username input field
-    var log = document.getElementById("log2"); // Log container for messages
-    var pick = document.getElementById("colorpicker2"); // Username's Colorpicker
-    var message = document.getElementById("message2");
+    var msg = document.getElementById("msg3"); // Message input field
+    var nme = document.getElementById("nme3"); // Username input field
+    var log = document.getElementById("log3"); // Log container for messages
+    var pick = document.getElementById("colorpicker3"); // Username's Colorpicker
+    var message = document.getElementById("message3");
 
     // A map to store usernames and their assigned colors
     var userColors = {};
@@ -126,7 +126,7 @@
     if (window["WebSocket"]) {
 		function establishConnection() {
 		    // Establish a WebSocket connection to the server
-	        conn = new WebSocket("wss://" + "chat2.bzmb.eu" + "/ws");
+	        conn = new WebSocket("wss://" + "chat3.bzmb.eu" + "/ws");
 
 			// Event handler when open
 			conn.onopen = function(evt) {
@@ -157,7 +157,7 @@
 
 			        // Display username and message
 			        const item = document.createElement("div");
-					item.id = 'box2';
+					item.id = 'box3';
 
 			        // Create a span for the username with bold styling
 			        const nameDiv = document.createElement("div");
