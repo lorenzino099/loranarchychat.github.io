@@ -21,6 +21,10 @@
   flex-direction: column-reverse;
 }
 
+#secondChatServer {
+ height: 100%;
+}
+
 #messages {
  scrollbar-color: transparent rgba(255, 255, 255, 0.05);
  scrollbar-width: none;
