@@ -67,6 +67,15 @@
   /* semi-transparent */
  z-index: 100;
 }
+.chatalt3 {
+ backdrop-filter: blur(9px);
+ height: 100%;
+ position: absolute;
+ top: 50px;
+ :;-
+ color: transparent rgba(255, 255, 255, 0.05);
+ scrollbar-width: none;
+}
 .container {
   display: flex;
   justify-content: space-between;
