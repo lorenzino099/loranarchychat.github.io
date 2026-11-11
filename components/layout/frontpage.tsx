@@ -151,16 +151,19 @@ export default function FrontPage() {
     }
     console.log("did not get any cookie data...")
     if (name === "name") {
-      console.log("name: ", defaultValue as string + userInfo.getRandomDigit())
-      setCookieValue("name", defaultValue as string + userInfo.getRandomDigit())
-      return defaultValue as string + userInfo.getRandomDigit()
+      // Called from useState initializers, so write the cookie directly;
+      // the state setters don't exist yet at that point.
+      const newName = defaultValue as string + userInfo.getRandomDigit()
+      cookie.setCookie("name", newName)
+      return newName
     }
     if (name === "color") {
-      setCookieValue("color", userInfo.getRandomColor())
-      return "" + userInfo.getRandomColor()
+      const newColor = "" + userInfo.getRandomColor()
+      cookie.setCookie("color", newColor)
+      return newColor
     }
     if (name === "block") {
-      setCookieValue("unblock-all", "")
+      cookie.setCookie("block", [])
       return []
     }
     if (name === "btn") {

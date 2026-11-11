@@ -2,13 +2,9 @@ import { spawn } from "node:child_process"
 const process = require('node:process')
 
 const prod = process.env.NODE_ENV === 'production'
-const docker = process.env.DOCKER_ENV === 'true'
 
-var bin = (name: string) => `./node_modules/.bin/${name}`
-
-if (docker) {
-  bin = (name: string) => `/app/node_modules/.bin/${name}`
-}
+// .bin/* are shell scripts on Windows, so resolve the real JS entry instead
+const bin = (name: string) => require.resolve(`${name}/cli`)
 
 var commands: any[] = []
 
